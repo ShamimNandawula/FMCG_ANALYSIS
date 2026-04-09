@@ -1,15 +1,23 @@
-<img width="723" height="353" alt="image" src="https://github.com/user-attachments/assets/70d2a821-bc3b-42a2-839b-e577465e77ad" /># FMCG_ANALYSIS
-This project simulates a real-world FMCG (Fast-Moving Consumer Goods) data analysis environment for "QuickMart", a retail company operating across multiple regions. The goal is to demonstrate proficiency 
+FMCG Sales Analytics Portfolio Project
 
-SQL querying for business intelligence
-Data analysis for sales, inventory, and promotions
-Problem-solving with real business constraints
-Communication of actionable insights
-Business Context: QuickMart wants to optimize sales performance, inventory management, and promotional effectiveness across its 8 stores and 20 product categories.
+Project Overview
 
-🗂️ Database Schema
+This project simulates a real-world **FMCG (Fast-Moving Consumer Goods)** data analysis environment for "QuickMart", a retail company operating across multiple regions. The goal is to demonstrate proficiency in:
+
+- **SQL querying** for business intelligence
+- **Data analysis** for sales, inventory, and promotions
+- **Problem-solving** with real business constraints
+- **Communication** of actionable insights
+
+**Business Context:** QuickMart wants to optimize sales performance, inventory management, and promotional effectiveness across its 8 stores and 20 product categories.
+
+
+
+Database Schema
+
 The database consists of 6 interconnected tables representing the core operations of an FMCG retailer:
 
+```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
 │  products   │     │   stores    │     │ customers   │
 ├─────────────┤     ├─────────────┤     ├─────────────┤
@@ -41,11 +49,16 @@ The database consists of 6 interconnected tables representing the core operation
               └─────────────────────────┘
 
 
+**Key Relationships:**
+- One `product` can appear in many `sales` and `inventory` records
+- One `store` can have many `sales` and `inventory` entries
+- One `customer` can have many `sales` transactions
+
+
 Dataset Characteristics
 
 | Table | Row Count (Sample) | Time Period | Key Metrics |
 |-------|-------------------|-------------|--------------|
-
 | products | 20 | N/A | Unit price, cost, category |
 | stores | 8 | N/A | Region, type, size |
 | customers | 50 | 2021-2023 | Loyalty tier, demographics |
@@ -54,16 +67,9 @@ Dataset Characteristics
 | promotions | 7 | Q1 2024 | Discount rates, durations |
 
 
-Technologies Used
-Database: PostgreSQL 15+ / MySQL 8+ / SQLite 3 (compatible with all)
+----
 
-Query Editor: [Your choice: DBeaver, DataGrip, pgAdmin, VS Code]
 
-Version Control: Git & GitHub
-
-Documentation: Markdown
-
-Repository Structure
 fmcg-sql-portfolio/
 │
 ├── README.md                 # This file
@@ -92,4 +98,8 @@ fmcg-sql-portfolio/
 │
 └── visualizations/           # (Optional: Tableau/Power BI exports)
     └── dashboard_screenshots/
-    
+
+
+
+
+
