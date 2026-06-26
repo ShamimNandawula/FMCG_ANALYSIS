@@ -1,4 +1,4 @@
-FMCG Sales Analytics Portfolio Project
+FMCG Sales Analytics SQL Project
 
 Project Overview
 
